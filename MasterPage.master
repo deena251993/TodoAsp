@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl">
+<head id="Head1" runat="server">
+    <title>ToDo List Application </title>
+</head>
+<body style="margin: 0px">
+    <form id="formMaster" runat="server">
+    <div>
+        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse"
+            width="100%">
+            <tr>
+                <td align="center">
+                    <h1>To-Do App</h1>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <table border="0" cellpadding="0" cellspacing="0" align="center" width="1200px" dir="rtl">
+        <tr>
+            <td align="center" style="text-align: right">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="text-align: right">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td style="color: #003366; font-size: larger; font-weight: bold;" align="center">
+                
+            </td>
+        </tr>
+        <tr runat="server" id="trLoginName">
+            <td align="left">
+                <asp:LoginName ID="LoginName1" runat="server" FormatString=" {0} " Font-Bold="True"
+                    Font-Names="Tahoma" Font-Size="11px" />
+                &nbsp;
+                <asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="" Font-Names="Tahoma"
+                    Font-Size="11px" Font-Bold="true" ForeColor="#003366" LogoutText="خروج" />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <asp:ScriptManager ID="ScriptManager1" runat="server">
+                </asp:ScriptManager>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
